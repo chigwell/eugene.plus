@@ -1,56 +1,61 @@
 export const Data = {
   profile: {
-    name: "Matias Lagos",
-    ocupation: "FullStack Software Developer",
-    location: "Santiago, Chile",
-    email: "lagos.matias25@gmail.com",
-    telephone: "+56 971999705",
-    image: "images/me.webp",
+    name: "Eugene Evstafev",
+    ocupation: "Full-Stack Software Developer",
+    location: "Cambridge, United Kingdom",
+    email: "hi@eugene.plus",
+    telephone: "+44 7999839415",
+    image: "images/me.jpeg",
   },
   aboutMe: {
-    label: "Perfil",
+    label: "About Me",
     description:
-      "Analista Programador, capacitado para desarrollar aplicaciones informáticas en diversas tecnologías y múltiples lenguajes de programación, aplicando metodologías ágiles de desarrollo, incluyendo identificación de necesidades y diseños de sistemas basados en modelos de desarrollo.",
+      "Software developer with 11+ years of enterprise experience. Expert in Python, React, TypeScript, and SQL, with strong DevOps skills in GCP and Terraform. Focused on microservices, infrastructure-as-code, and machine-learning applications. Former system architect and product owner in banking and e-commerce.",
   },
   skills: {
-    technicalLabel: "Tecnologías",
+    technicalLabel: "Technologies",
     softLabel: "Skills",
     technicalSkills: [
-      "Angular",
-      "React",
-      "Java",
-      "Nodejs",
-      "Spring Boot",
-      "Nestjs",
-      "APIM",
-      "SQL",
-      "Git",
+      "Python (Flask, FastAPI, Django)",
+      "JavaScript (React, Node.js)",
+      "SQL (PostgreSQL, MS SQL)",
+      "NoSQL (MongoDB)",
+      "Pub/Sub",
+      "GCP",
+      "Terraform",
+      "Docker",
+      "CI/CD (GitLab, GitHub Actions)",
+      "Git (GitLab, GitHub)",
+      "Cypress, Jest, Pytest",
+      "Linux (Ubuntu, Debian)",
+      "Fine-tuning custom LLMs",
     ],
     softSkills: [
-      "Capacidad de análisis",
-      "Resolución de Problemas",
-      "Pensamiento Crítico",
-      "Trabajo en equipo",
-      "Comunicación",
-      "Proactividad",
-      "Creatividad",
-      "Autodidacta",
-      "Mentoria",
+      "Systems analysis",
+      "Critical thinking",
+      "Problem solving",
+      "Teamwork",
+      "Communication",
+      "Mentoring",
+      "Self-management",
+      "Initiative",
+      "Creativity",
+      "Results-oriented",
     ],
   },
   socialMedia: {
     label: "SOCIAL",
     social: [
       {
-        label: "Visitar el perfil de Matias Lagos en LinkedIn",
+        label: "Eugene Evstafev on LinkedIn",
         name: "linkedin",
-        url: "https://www.linkedin.com/in/mlagosg",
+        url: "https://www.linkedin.com/in/eugene-evstafev-716669181/",
         className: "bxl-linkedin-square",
       },
       {
-        label: "Visitar el perfil de Matias Lagos en GitHub",
+        label: "Eugene Evstafev on GitHub",
         name: "github",
-        url: "https://github.com/Maaato",
+        url: "https://github.com/chigwell",
         className: "bxl-github",
       },
     ],
@@ -58,76 +63,114 @@ export const Data = {
   experience: {
     works: [
       {
-        title: "FULL-STACK DEVELOPER",
-        period: "Oct. 2021 - Actualidad",
-        company: "Banco Ripley",
+          title: "Software Developer (UIS)",
+          period: "Sep. 2022 – Present",
+          company: "University of Cambridge",
+          description: [
+            "Own & re-architect Cambridge's identity platform (30k active cards) on a secure GCP stack-React, Django, PostgreSQL, Terraform, GitLab CI/CD—cutting defects and help-desk load.",
+            "Modernised staff/student onboarding: new myaccount.apps.cam.ac.uk flow plus high-trust REST APIs syncing CHRIS ↔ CamSIS with IAM services.",
+            "Top commit rate (5 509 pushes / 526 MRs), mentored six DevOps hires, and earned the 2024 Contribution Reward for excellent impact.",
+          ],
+        },
+      {
+        title: "System Architect & Tech Product Owner",
+        period: "Oct. 2020 - Feb. 2022",
+        company: "L'Étual",
         description: [
-          "Desarrollo y mejora continua de microservicios REST en Java y Node.js(JS/TS).",
-          "Desarrollo y mejora continua de PWA en las tecnologías Angular, Ionic y Cordova.",
-          "Canalización CI/CD con Bitbucket, Jenkins y AWS como infraestructura."
+          "Re-architected Russia’s #1 beauty e-commerce (20M monthly visits) from a monolithic Oracle ATG stack to a Kafka-driven Java micro-service marketplace with Vue SSR, onboarding thousands of partners and keeping web + 10 M-download mobile apps online throughout.",
+          "Led 3 SAFe squads (21 Java/Vue devs + QA) through 28 sprints and 930 + tasks, lifting Google Play ratings 3.2 → 4.7, downloads 3M → 10M, and supporting revenue growth from 61 → 100 bn RUB.",
         ],
       },
       {
-        title: "FULL-STACK DEVELOPER",
-        period: "Oct. 2019 - Oct. 2021",
-        company: "Altiuz",
+        title: "Head of System Analytics",
+        period: "Jun. 2019 - Sep. 2020",
+        company: "Gazprombank",
         description: [
-          "Desarrollo de Web Services REST en Java y Nodejs(JS/TS) acompañado de diferentes motores de BD como Mysql, Oracle, MariaDB, MongoDB e IBM API Connect y 3scale como API Gateway.",
-          "Desarrollo de Frontend y Mobile con tecnologías como Angular, React, React Native, Ionic y Cordova.",
+          "Built and led a 23-strong analytics/dev squad for core-banking systems serving 7M daily users, instituting Agile, Jira, and KPI frameworks.",
+          "Architected Python/Java/MS SQL automations-from regulatory reporting to pre-approved-offer engines-scaling to 7M daily users.",
         ],
+      },
+      {
+          title: "Head of System Analysis & Software Design",
+          period: "Jul. 2019 – Oct. 2020",
+          company: "CENTER 2M",
+          description: [
+            "Led the System Analysis & Data Analytics department (9 analysts) post-promotion, instituting SADT/IDEF0 and BPMN 2.0 workflows.",
+            "Engineered ETL pipelines consolidating hundreds of GB of unstructured data-shrinking integration from 10-person weeks to <1 week.",
+            "Shaped Big-Data/ML architecture (UML, ISO/IEC/IEEE 42010) and ran 300+ senior-level technical interviews for strategic hires.",
+          ],
+      },
+      {
+          title: "Full-stack Developer",
+          period: "Nov. 2016 – Jul. 2019",
+          company: "T Plus PJSC",
+          description: [
+          ],
+      },
+      {
+          title: "Director",
+          period: "Dec. 2015 – Oct. 2016",
+          company: "UFM, LLC",
+          description: [
+          ],
+      },
+      {
+          title: "Full-stack Engineer",
+          period: "Oct. 2014 – Nov. 2015",
+          company: "ITIS, LLC",
+          description: [
+          ],
+      },
+      {
+          title: "Junior Full-stack Engineer",
+          period: "Jul. 2010 – Sep. 2014",
+          company: "IT Invest, LLC et al.",
+          description: [
+          ],
       },
     ],
     academic: [
       {
-        career: "Técnico de Nivel Superior Analista Programador",
-        date: "2019",
-        institution: "Universidad Tecnológica de Chile INACAP",
+        career: "Master's in Programming",
+        date: "2016",
+        institution: "Perm Polytechnic University",
+      },
+      {
+        career: "BSc in Business Informatics",
+        date: "2014",
+        institution: "Higher School of Economics (HSE)",
       },
     ],
     proyects: [
       {
-        name: "Onboarding Digital",
-        company: "Banco de Chile",
-        period: "Nov. 2019 - Ene. 2020",
-        description: [
-          "Control, desarrollo, securitización y despliegue de APIs en plataforma IBM API Connect.",
-        ],
-      },
-      {
-        name: "Captación Digital",
-        company: "Banco Ripley",
-        period: "Ene. 2020 - Feb. 2020",
-        description: [
-          "Control, desarrollo y securitización de APIs en plataforma IBM API Connect.",
-          "Desarrollo frontend en Angular para el consumo de Web Services SOAP/REST apuntando a ambientes DEV/PRE-PROD/PROD como simulación.",
-        ],
-      },
-      {
-        name: "Agendamiento Remoto",
-        company: "Gobierno de Chile",
-        period: "Mar. 2020 - May. 2020",
-        description: [
-          "Desarrollo frontend y mobile con las tecnologias de Angular 6 e Ionic 4 para el agendamiento de horas en centros a lo largo de todo Chile.",
-        ],
-      },
-      {
-        name: "Altiuz Report Dynamic",
-        company: "Altiuz",
-        period: "Jun. 2020 - Jul. 2020",
-        description: [
-          "Desarrollo de servicio Java para la generación unitaria de documentos, sin la necesidad de tener almacenada la información del mismo en una fuente de datos.",
-        ],
-      },
-      {
-        name: "Desarrollos Tigo",
-        company: "Computec S.A.S",
-        period: "Ago. 2020 - Dic 2020",
-        description: [
-          "Desarrollo Java/Spring Boot de Web Service API REST para consulta y descarga de documentos almacenados en repositorios IBM CMOD.",
-          "Desarrollo Java CRON para transferencia de documentos XML hacia servidor SFTP.",
-          "Desarrollo Java CRON para carga de documentos PDFs hacia Azure Blob Storage.",
-        ],
-      },
+          name: "LLM7.io",
+          company: "LLM7.io",
+          period: "Apr. 2025 - Present",
+          description: [
+            "Free, anonymous LLM provider-start using powerful models instantly with no sign-up.",
+          ],
+        },
+        {
+          name: "Findora.dev",
+          period: "May 2025 - Present",
+          description: [
+            "LLM-based search utility with open-source SDKs on PyPI and npm.",
+          ],
+        },
+        {
+          name: "telegram-mcp",
+          period: "Mar. 2025 - Present",
+          description: [
+            "Telethon-powered Python integration that exposes Telegram via Model Context Protocol for Claude, Cursor, and other MCP clients.",
+          ],
+        },
+        {
+          name: "eknowledge",
+          period: "Apr. 2024 - Present",
+          description: [
+            "Python package that converts unstructured text into knowledge graphs using LLM extraction.",
+          ],
+        },
     ],
   },
 };
