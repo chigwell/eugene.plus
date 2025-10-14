@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Particles from "react-particles-js";
 import { ParticlesParams } from "../Schemas/Particles";
 
 export const Options = () => {
@@ -24,7 +23,7 @@ export const Options = () => {
   }, [theme, snow, icon]);
 
   const SnowEffect = () =>
-    snow && theme === "dark" && <Particles params={ParticlesParams} />;
+    snow && theme === "dark";
 
   const _enableSnow = () => setSnow(!snow);
   const _toggleTheme = () => {
@@ -34,14 +33,6 @@ export const Options = () => {
 
   return (
     <div className="home__options no-print" id="resume__options">
-      {theme === "dark" && (
-        <i
-          className="bx bx-cloud-snow enable-snow"
-          title="Activate Snow"
-          id="snow-button"
-          onClick={_enableSnow}
-        />
-      )}
       <SnowEffect />
       <i
         className={`bx ${icon} change-theme`}
