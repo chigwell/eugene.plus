@@ -2,7 +2,7 @@ export const Data = {
   profile: {
     name: "Eugene Evstafev",
     ocupation: "Full-Stack Software Developer",
-    location: "Cambridge, United Kingdom",
+    location: "Peterborough, United Kingdom",
     email: "hi@eugene.plus",
     telephone: "+44 7999839415",
     image: "images/me.jpeg",
@@ -49,7 +49,7 @@ export const Data = {
       {
         label: "Eugene Evstafev on LinkedIn",
         name: "linkedin",
-        url: "https://www.linkedin.com/in/eugene-evstafev-716669181/",
+        url: "https://www.linkedin.com/in/eugene-evstafev/",
         className: "bxl-linkedin-square",
       },
       {
