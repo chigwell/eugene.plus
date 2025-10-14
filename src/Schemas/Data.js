@@ -69,7 +69,7 @@ export const Data = {
           description: [
             "Own & re-architect Cambridge's identity platform (30k active cards) on a secure GCP stack-React, Django, PostgreSQL, Terraform, GitLab CI/CD—cutting defects and help-desk load.",
             "Modernised staff/student onboarding: new myaccount.apps.cam.ac.uk flow plus high-trust REST APIs syncing CHRIS ↔ CamSIS with IAM services.",
-            "Top commit rate (5 509 pushes / 526 MRs), mentored six DevOps hires, and earned the 2024 Contribution Reward for excellent impact.",
+            "Top commit rate (5.5k+ pushes / 550+ MRs), mentored six DevOps hires, and earned the 2024 Contribution Reward for excellent impact.",
           ],
         },
       {
