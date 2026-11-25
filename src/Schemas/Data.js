@@ -10,7 +10,7 @@ export const Data = {
   aboutMe: {
     label: "About Me",
     description:
-      "Hands-on technology leader and systems architect with 11+ years of engineering experience across mobile applications, enterprise platforms and AI products. Built iOS and Android applications from scratch for an internal audience of 50,000 at T Plus and led engineering teams delivering large-scale consumer e-commerce. Combine Python, React and TypeScript with mobile development skills in Cordova and Swift. Independently build and operate LLM7.io, a paid LLM API, using multi-agent development, with peak throughput of 28M+ tokens per minute. Bring technical product ownership, identity and access management experience, mentoring and hands-on delivery.",
+      "Hands-on technology leader and systems architect with 11+ years of engineering experience across mobile applications, enterprise platforms and AI products. Built iOS and Android applications from scratch for an internal audience of 50,000 at T Plus and led engineering teams delivering large-scale consumer e-commerce, including mobile apps for an audience of more than 7 million end users. Combine Python, React and TypeScript with mobile development skills in Cordova and Swift. Independently build and operate LLM7.io, a paid LLM API, using multi-agent development, with peak throughput of 28M+ tokens per minute. Bring technical product ownership, identity and access management experience, mentoring and hands-on delivery.",
     additionalDescription:
       "Awarded a UK Global Talent visa under the Exceptional Talent category in 2025; subsequently granted indefinite leave to remain (ILR) through an accelerated route.",
   },
