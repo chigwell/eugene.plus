@@ -167,6 +167,7 @@ body.dark-theme {
 }
 
 .l-header {
+  display: none;
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -184,7 +185,11 @@ body.dark-theme {
   align-items: center;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (width < 968px) {
+  .l-header {
+    display: block;
+  }
+
   .nav__menu {
     position: fixed;
     bottom: -100%;
