@@ -100,12 +100,12 @@ body.dark-theme {
 }
 
 /*========== Options button ==========*/
-.change-theme {
+.change-theme,
+.download-pdf {
   border: 0;
   background: transparent;
   padding: .25rem;
   position: absolute;
-  right: 0;
   top: 2.2rem;
   display: flex;
   color: var(--text-color);
@@ -113,7 +113,16 @@ body.dark-theme {
   cursor: pointer;
 }
 
-.change-theme:hover {
+.change-theme {
+  right: 0;
+}
+
+.download-pdf {
+  left: 0;
+}
+
+.change-theme:hover,
+.download-pdf:hover {
   color: var(--title-color);
 }
 
@@ -349,16 +358,6 @@ button.generate__btn {
 
 .profile__additional {
   margin-top: 1rem;
-  font-size: var(--small-font-size);
-}
-
-.download-cv {
-  text-align: right;
-  padding-top: 1rem;
-}
-
-.download-cv .generate__btn {
-  padding: .6rem 1rem;
   font-size: var(--small-font-size);
 }
 

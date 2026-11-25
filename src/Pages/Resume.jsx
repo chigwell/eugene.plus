@@ -29,11 +29,6 @@ export const Resume = () => {
     <>
       <SEO  {...profile} {...aboutMe} />
       {!matches && <Menu {...menuSchema} />}
-      <div className="download-cv no-print bd-container">
-        <button type="button" className="generate__btn" onClick={() => window.print()}>
-          Download CV as PDF
-        </button>
-      </div>
       <main className='l-main bd-container' id='bd-container'>
         <div className='resume' id='area-cv'>
           <div className='resume__left'>

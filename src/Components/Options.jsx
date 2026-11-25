@@ -34,6 +34,13 @@ export const Options = () => {
       <SnowEffect />
       <button
         type="button"
+        className="bx bx-download download-pdf"
+        title="Download CV as PDF"
+        aria-label="Download CV as PDF"
+        onClick={() => window.print()}
+      />
+      <button
+        type="button"
         className={`bx ${icon} change-theme`}
         title="Toggle Theme"
         aria-label="Toggle Theme"
