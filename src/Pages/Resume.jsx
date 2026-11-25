@@ -8,6 +8,7 @@ import { Works } from "../Components/Works";
 import { AboutMe } from "../Components/AboutMe";
 import { Menu } from "../Components/Menu";
 import { SEO } from "../Components/SEO";
+import { Research } from "../Components/Research";
 
 import { Data as dataSchema } from '../Schemas/Data';
 import { Menu as menuSchema } from '../Schemas/Menu';
@@ -28,6 +29,11 @@ export const Resume = () => {
     <>
       <SEO  {...profile} {...aboutMe} />
       {!matches && <Menu {...menuSchema} />}
+      <div className="download-cv no-print bd-container">
+        <button type="button" className="generate__btn" onClick={() => window.print()}>
+          Download CV as PDF
+        </button>
+      </div>
       <main className='l-main bd-container' id='bd-container'>
         <div className='resume' id='area-cv'>
           <div className='resume__left'>
@@ -37,8 +43,9 @@ export const Resume = () => {
           </div>
           <div className='resume__right'>
             <Works {...experience} />
-            <Academic {...experience} />
             <Proyects {...experience} />
+            <Academic {...experience} />
+            <Research paragraphs={dataSchema.research} />
           </div>
         </div>
       </main>

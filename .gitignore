@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 .vercel
+.wrangler/
+.env
+.env.*
+.dev.vars
+.dev.vars.*
 
 # Editor directories and files
 .vscode/*

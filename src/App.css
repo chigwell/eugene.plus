@@ -101,6 +101,9 @@ body.dark-theme {
 
 /*========== Options button ==========*/
 .change-theme {
+  border: 0;
+  background: transparent;
+  padding: .25rem;
   position: absolute;
   right: 0;
   top: 2.2rem;
@@ -344,6 +347,34 @@ button.generate__btn {
   text-align: center;
 }
 
+.profile__additional {
+  margin-top: 1rem;
+  font-size: var(--small-font-size);
+}
+
+.download-cv {
+  text-align: right;
+  padding-top: 1rem;
+}
+
+.download-cv .generate__btn {
+  padding: .6rem 1rem;
+  font-size: var(--small-font-size);
+}
+
+.product-link {
+  color: var(--title-color);
+  text-decoration: underline;
+  text-underline-offset: .2em;
+  overflow-wrap: anywhere;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--title-color);
+  outline-offset: 4px;
+}
+
 .education__content,
 .experience__content {
   display: flex;
@@ -386,6 +417,7 @@ button.generate__btn {
 .education__data,
 .experience__data {
   gap: 0.5rem;
+  min-width: 0;
 }
 
 .education__title,
@@ -495,14 +527,29 @@ button.generate__btn {
 @media print {
 
   @page {
-    size: auto;
-    margin: 0mm;
+    size: A4;
+    margin: 12mm;
   }
 
   html {
-    font-size: var(--print-font-size);
+    font-size: 10pt;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
+  }
+
+  body,
+  body.dark-theme {
+    --title-color: #202938;
+    --text-color: #303a49;
+    --text-color-light: #526071;
+    --container-color: #ffffff;
+    --container-color-alt: #ffffff;
+    margin: 0;
+    background: white;
+  }
+
+  .section {
+    padding: .6rem 0;
   }
 
   .print {
@@ -520,14 +567,14 @@ button.generate__btn {
   }
 
   .resume {
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    display: block;
+    box-shadow: none;
   }
 
   .resume__left,
   .resume__right {
-    padding: 0 1.5rem;
-    height: 100vh;
+    padding: 0;
+    height: auto;
   }
 
   .resume__left {
@@ -540,6 +587,9 @@ button.generate__btn {
 
   .section-title {
     margin-bottom: var(--mb-0-25);
+    letter-spacing: .1rem;
+    font-size: 1.1rem;
+    break-after: avoid;
   }
 
   .section-title,
@@ -556,7 +606,8 @@ button.generate__btn {
   }
 
   .home__contact {
-    grid-template-columns: none;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
 
@@ -564,8 +615,30 @@ button.generate__btn {
     gap: .90rem;
   }
 
-  .experience__content:nth-child(n+5) {
+  .experience__time,
+  .education__time {
     display: none;
+  }
+
+  .experience__content,
+  .education__content {
+    break-inside: avoid;
+  }
+
+  .experience__container,
+  .education__container,
+  .research .bd-grid {
+    gap: .75rem;
+  }
+
+  .skills__data {
+    columns: 2;
+    column-gap: 2rem;
+  }
+
+  .skills__name {
+    break-inside: avoid;
+    margin-bottom: .2rem;
   }
 
   .social__link {
@@ -576,7 +649,7 @@ button.generate__btn {
 
   .social__link {
     border: none;
-    width: 100%;
+    width: auto;
     padding: 0;
     height: auto;
     justify-content: flex-start;
@@ -590,6 +663,16 @@ button.generate__btn {
 
   a[href]:after {
     content: attr(data-print);
+  }
+
+  .product-link[data-print]:after {
+    display: block;
+    font-size: .85rem;
+    font-weight: normal;
+  }
+
+  .product-link {
+    text-decoration: none;
   }
 
 }

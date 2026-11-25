@@ -3,17 +3,17 @@ import { Description } from "./Description";
 export const Proyects = ({ proyects }) => {
   return (
     <section className="proyects-experience section" id="proyects">
-      <h2 className="section-title">Projects</h2>
+      <h2 className="section-title">Selected Products &amp; Projects</h2>
       <div className="experience__container bd-grid">
         {proyects.map((proyect) => (
-          <Proyect key={proyect.company} {...proyect} />
+          <Proyect key={proyect.name} {...proyect} />
         ))}
       </div>
     </section>
   );
 };
 
-const Proyect = ({ name, company, period, description }) => {
+const Proyect = ({ name, url, period, description }) => {
   return (
     <div className="experience__content">
       <div className="experience__time">
@@ -22,9 +22,9 @@ const Proyect = ({ name, company, period, description }) => {
       </div>
       <div className="experience__data bd-grid">
         <h3 className="experience__title">
-          {name}
+          {url ? <a href={url} target="_blank" rel="noopener noreferrer" className="product-link" data-print={url}>{name}</a> : name}
         </h3>
-        <span className="experience__proyect">{period}</span>
+        {period && <span className="experience__proyect">{period}</span>}
         {description.map((desc, i) => <Description key={i} desc={desc} />)}
       </div>
     </div>

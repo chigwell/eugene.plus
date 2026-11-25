@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "eugene-plus",
+  "account_id": "2b1f8c4c716d2aa53e68800810c5ebb0",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-06",
+  "workers_dev": false,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": false
+  },
+  "routes": [
+    { "pattern": "eugene.plus", "custom_domain": true },
+    { "pattern": "www.eugene.plus", "custom_domain": true }
+  ]
+}

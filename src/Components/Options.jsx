@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { ParticlesParams } from "../Schemas/Particles";
 
 export const Options = () => {
   var { lsTheme, lsIcon, lsSnow } = "";
@@ -13,7 +12,7 @@ export const Options = () => {
 
   const [theme, setTheme] = useState(lsTheme || "light");
   const [icon, setIcon] = useState(lsIcon || "bx-moon");
-  const [snow, setSnow] = useState(lsSnow);
+  const [snow] = useState(lsSnow);
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
@@ -25,7 +24,6 @@ export const Options = () => {
   const SnowEffect = () =>
     snow && theme === "dark";
 
-  const _enableSnow = () => setSnow(!snow);
   const _toggleTheme = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
     icon === "bx-sun" ? setIcon("bx-moon") : setIcon("bx-sun");
@@ -34,9 +32,11 @@ export const Options = () => {
   return (
     <div className="home__options no-print" id="resume__options">
       <SnowEffect />
-      <i
+      <button
+        type="button"
         className={`bx ${icon} change-theme`}
         title="Toggle Theme"
+        aria-label="Toggle Theme"
         id="theme-button"
         onClick={_toggleTheme}
       />
